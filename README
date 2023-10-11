@@ -1,0 +1,32 @@
+Noel Andolz Aguado
+Daniel Lozano Uceda
+
+We have completely done until Part 3 Step 4, included.
+
+The commands needed for the compilation and execution of the script are:
+-Compilation:
+	gcc -g -Wall collection.c errors.c execute_schedule.c input_usr.c item.c menu.c program.c -o program
+	gcc -g -Wall process.c -o process
+-Execution:
+	./program
+
+//Some functions of collection.c, collection.h, errors.c, errors.h, the function get_input, item.c and item.h have been copied or inspired from the slides.
+
+CONSIDERATIONS:
+    - Whenever an input is asked to the user, if a specific data type is expected, the program won´t
+    continue until the received input is of that data type. So, the program will only accept inputs
+    from the expected data type:
+        . Name: Chars or Integers.
+        . PID: Integer.
+        . Execution time: Integer.
+        . Priority: Integer.
+        . Yes or No: YES, Yes, yes, y, NO, No, no, n.
+    If, the user does not introduce the expected data type, the program will repeatedly ask to
+    introduce again the parameter as it has been impossible for the program to understand it.
+    This will happen until the introduced parameter is correct.
+
+    - When the user is asked to introduce Yes or No, as mentioned above, there are some more valid
+    answers such as: YES, Yes, yes, y, NO, No, no, n .
+    If, another group of chars is introduced, the program won´t inderstand it and will ask the user to
+    introduce again an answer to the question. In the case where the user introduces an integer,
+    the same procedure will happen.

@@ -1,0 +1,19 @@
+#ifndef ERRORS_H
+#define ERRORS_H
+#define NUM_COLLECTION_ERROR_MSGS 14
+#define SUCCESS 0
+#define ERR_CTRL_D -1
+#define ERR_EMPTY_STRING -2
+#define ERR_CONTAIN_LETTER -3
+#define ERR_NO_ITEMS -4
+#define ERR_ELEMENT_ALREADY_COL -5
+#define ERR_ELEMENT_NOT_FOUND -6
+#define ERR_SCHEDULE_NOT_EMPTY -7
+#define ERR_FILE_NOT_EXIST_OR_NOT_READ -8
+#define ERR_FILE_NOT_WRITABLE -9
+#define ERR_INVALID_INPUT -10
+#define ERR_FORK_FAILED -11
+#define ERR_EXECUTION_FAILED -12
+#define ERR_CONVERTION_INTEGER_TO_STRING_FAILED -13
+const char* get_error_msg_col();	//copied from slides
+#endif
